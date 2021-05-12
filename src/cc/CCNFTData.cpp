@@ -202,8 +202,6 @@ bool ValidateNFTOpretV2(struct CCcontract_info *cp, Eval* eval, const CTransacti
 
 bool NFTDataValidate(struct CCcontract_info *cp, Eval* eval, const CTransaction &tx, uint32_t nIn)
 {
-    if (strcmp(ASSETCHAINS_SYMBOL, "TKLTEST") == 0 && chainActive.Height() <= 33711)
-        return true;
     //if (strcmp(ASSETCHAINS_SYMBOL, "DIMXY20") == 0 && chainActive.Height() <= 1704)
     //    return true;
 
